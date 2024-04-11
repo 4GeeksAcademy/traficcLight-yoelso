@@ -1,24 +1,23 @@
 import React from "react";
+import { useState } from "react";
+import { TraficcLight } from "./TraficcLight";
 
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+/*
+ - Create a div that contain the traffict light structure
+	- Create a component that have the traffict light
+	- 
+
+*/
 
 //create your first component
 const Home = () => {
+
+
+
 	return (
-		<div className="text-center">
-			<h1 className="text-center mt-5">Hello Rigo!</h1>
-			<p>
-				<img src={rigoImage} />
-			</p>
-			<a href="#" className="btn btn-success">
-				If you see this green button... bootstrap is working...
-			</a>
-			<p>
-				Made by{" "}
-				<a href="http://www.4geeksacademy.com">4Geeks Academy</a>, with
-				love!
-			</p>
+		<div className="container d-flex flex-column align-items-center">
+			<h2 className="display-4 fw-bolder"> Traffic Light </h2>
+			<TraficcLight/>
 		</div>
 	);
 };
